@@ -1,0 +1,30 @@
+{
+  "name": "buet_cse_hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ash200042123/buet_cse_hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ash200042123/buet_cse_hackathon/issues"
+  },
+  "homepage": "https://github.com/Ash200042123/buet_cse_hackathon#readme"
+}
