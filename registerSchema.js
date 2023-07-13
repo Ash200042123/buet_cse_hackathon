@@ -5,7 +5,7 @@ const registerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  email: {
+  phoneno: {
     type: String,
     required: true,
   },

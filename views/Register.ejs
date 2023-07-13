@@ -1,0 +1,94 @@
+
+
+<div class="container">
+  <div class="signup-form">
+    <form action="" method="POST">
+      <h2>Citizen Registration</h2>
+      <p class="hint-text">Create your account.</p>
+      <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              onchange="onChange(event)"
+              name="first_name"
+              placeholder="First Name"
+              required="required"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-control"
+          onchange="onChange(event)"
+          name="password"
+          placeholder="Password"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-control"
+          onchange="onChange(event)"
+          name="confirm_password"
+          placeholder="Confirm Password"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          onchange="onChange(event)"
+          name="phoneno"
+          placeholder="Phone No"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          onchange="onChange(event)"
+          name="NID"
+          placeholder="NID No"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          onchange="onChange(event)"
+          name="addr1"
+          placeholder="Your Address"
+          required="required"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-check-label">
+          <input type="checkbox" required="required" /> I accept the
+          <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>
+        </label>
+      </div>
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn btn-success btn-lg btn-block"
+          onclick="onClick(event)"
+        >
+          Register Now
+        </button>
+      </div>
+      <!-- <div class="text-center" id="bottom">
+        Already have an citizen account? <a href="/signin">Sign in</a>
+      </div> -->
+    </form>
+  </div>
+</div>
+
