@@ -94,6 +94,62 @@ app.get('/register',(req,res)=>{
     res.render("Register", {first_name : "Enter name"});
 });
 
+
+
+
+
+
+app.get('/signin',(req,res)=>{
+    res.render("Login");
+});
+
+
+app.post('/signin',async (req,res)=>{
+    try{
+        const result=await Register.findOne({phoneno:req.body.phoneno})
+        if(result==null)
+        {
+          return res.send({
+            success:false,
+            message:'No User Found'
+          })
+        }
+        else
+        {
+          try{
+            return res.send({
+                success:true,
+                message:'Login successful'
+              })
+          }
+          catch(e)
+          {
+            console.log(e.message)
+          }
+        
+        }
+     }catch(e)
+     {
+          console.log(e.message)
+     }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(port,()=>console.log(`Running on port ${port}`));
 
 
