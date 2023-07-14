@@ -1,1 +1,4 @@
-# buet_cse_hackathon_frontend
+# buet_cse_hackathon
+
+Completed Code is available on branch 'Ashfaq'.
+Includes Certificate generation as well
