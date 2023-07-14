@@ -1,0 +1,55 @@
+<h1 class="text-center text-dark bg-white">
+    Covid-19 Vaccine Registration Portal
+  </h1>
+  <div class="login-form">
+    <form action="/vaccineregistration" method="post">
+      <h2 class="text-center">Citizen Sign in</h2>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="NID"
+          name="NID"
+          onchange="onChange(event)"
+          required="required"
+          value="<%- NID %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Vaccine Name"
+          name="vaccine_name"
+          onchange="onChange(event)"
+          required="required"
+        />
+      </div>
+      <!-- <div class="form-group">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          name="password"
+          onchange="onChange(event)"
+          required="required"
+        />
+      </div> -->
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn btn-primary btn-block"
+          onclick="onClick(event)"
+        >
+          Register Vaccine
+        </button>
+      </div>
+    </form>
+    <p class="text-center">
+      <a href="/register">Create an Account</a>
+    </p>
+    <p class="text-center">
+        <a href="/certificate">Certificate</a>
+      </p>
+  </div>
+  

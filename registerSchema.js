@@ -6,7 +6,7 @@ const registerSchema = new mongoose.Schema({
     required: true,
   },
   phoneno: {
-    type: String,
+    type: Number,
     required: true,
   },
   password: {
@@ -20,6 +20,14 @@ const registerSchema = new mongoose.Schema({
   addr1: {
     type: String,
     required: true,
+  },
+  vaccine_id: {
+    type: String,
+    required: false,
+  },
+  vaccine_date: {
+    type: Date,
+    required: false,
   },
 });
 
